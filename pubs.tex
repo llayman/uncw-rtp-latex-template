@@ -1,0 +1,18 @@
+\newpage
+\section*{Publications}
+\renewcommand{\sm}[2][1]{%
+    \phantomsection
+    \label{#2}
+    % \subsection*{#2}
+        \begin{tikzpicture}[remember picture,overlay]
+      \node at (current page.center) {\includegraphics[scale=#1, page=1]{pubs/#2}};
+    \end{tikzpicture}
+    % \includepdf[scale=#1, pages=1, pagecommand={}]{courses/#3}
+    \includepdf[scale=#1, pages=2-, pagecommand={}]{pubs/#2.pdf}
+}
+
+\sm{Layman2020}
+\sm{Roden2020}
+\sm{Layman2007b} \textbf{(Best Paper Award)}
+
+\sm{Shull2013}

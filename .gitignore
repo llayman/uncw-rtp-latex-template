@@ -1,0 +1,9 @@
+main.pdf
+*.synctex.gz
+*.aux
+*.log
+*.out
+*.bbl
+*.bcf
+*.blg
+*.run.xml

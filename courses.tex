@@ -1,0 +1,18 @@
+\newpage
+\section*{Sample Course Materials}
+\newcommand{\sm}[3][0.8]{%
+    \phantomsection
+    \label{#2}
+    \subsection*{#2}
+        \begin{tikzpicture}[remember picture,overlay]
+      \node at (current page.center) {\includegraphics[scale=#1, page=1]{courses/#3}};
+    \end{tikzpicture}
+    % \includepdf[scale=#1, pages=1, pagecommand={}]{courses/#3}
+    \includepdf[scale=#1, pages=2-, pagecommand={}]{courses/#3}
+}
+
+\sm{CSC 231 Syllabus}{231 FA20 Syllabus.pdf}
+\sm{CSC 231 ArrayList Worksheet}{231 FA20 ArrayList worksheet.pdf}
+\sm{CSC 231 ArrayList data structure - Stacks-Queues-Deques slides}{231 FA20 Slides 05 -The ArrayList data structure - Stacks-Queues-Deques.pdf}
+
+\sm{CSC 242 Syllabus}{242 FA18 Syllabus.pdf}

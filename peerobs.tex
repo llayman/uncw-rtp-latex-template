@@ -1,0 +1,16 @@
+\newpage
+\section*{Peer Observations}
+    
+\renewcommand{\sm}[3][0.95]{%
+    \phantomsection
+    \label{#2}
+    \subsection*{#2}
+        \begin{tikzpicture}[remember picture,overlay]
+      \node at (current page.center) {\includegraphics[scale=#1, page=1]{obs/#3}};
+    \end{tikzpicture}
+    \newpage
+    % \includepdf[scale=#1, pages=1, pagecommand={}]{courses/#3}
+    % \includepdf[scale=#1, pages=2-, pagecommand={}]{courses/#3}
+}
+
+\sm{Fall 2017 Peer Observation}{Fall 2017Peer Observation Report LLayman.pdf}
